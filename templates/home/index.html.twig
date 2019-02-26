@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Black Mirror - Home{% endblock %}
+
+{% block body %}
+    {% for episode in episodes %}
+    <div class="episode">
+        <p>Name : {{ episode.name }}</p>
+        <p>Season : {{ episode.season }}</p>
+        <p>Number : {{ episode.number }}</p>
+        <div>
+            <a href="{{ path('episode_show', {'id' : episode.id}) }}">
+                <img src="{{ episode.imgPath }}" alt="{{ episode.name }}" />
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+{% endblock %}
