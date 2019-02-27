@@ -9,7 +9,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class EpisodeController extends AbstractController
 {
     /**
-     * @Route("/episode/{id}", name="episode_show", requirements={"id"="\d+"})
+     * @Route("/episode/{slug}", name="episode_show")
      */
     public function index(Episode $episode)
     {

@@ -8,6 +8,7 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 /**
  * @ORM\Entity(repositoryClass="App\Repository\EpisodeRepository")
  * @UniqueEntity("name")
+ * @UniqueEntity("slug")
  */
 class Episode
 {
@@ -52,6 +53,11 @@ class Episode
      * @ORM\Column(type="string", length=255)
      */
     private $imgName;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $slug;
 
     public function getId(): ?int
     {
@@ -138,6 +144,18 @@ class Episode
     public function setImgName(string $imgName): self
     {
         $this->imgName = $imgName;
+
+        return $this;
+    }
+
+    public function getSlug(): ?string
+    {
+        return $this->slug;
+    }
+
+    public function setSlug(string $slug): self
+    {
+        $this->slug = $slug;
 
         return $this;
     }

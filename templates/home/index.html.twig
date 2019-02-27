@@ -13,7 +13,7 @@
             <div class="row">
                 {% for episode in episodes if episode.season == 1 %}
                 <div class="col-md-4 col-sm-6">
-                    <a href="{{ path('episode_show', {'id' : episode.id}) }}">
+                    <a href="{{ path('episode_show', {'slug' : episode.slug}) }}">
                         <div class="episode mx-1 my-3 text-center">
                             <p>
                                 <span class="badge badge-dark">Season {{ episode.season }}</span> 
@@ -33,7 +33,7 @@
             <div class="row">
                 {% for episode in episodes if episode.season == 2 %}
                 <div class="col-md-4 col-sm-6">
-                    <a href="{{ path('episode_show', {'id' : episode.id}) }}">
+                    <a href="{{ path('episode_show', {'slug' : episode.slug}) }}">
                         <div class="episode mx-1 my-3 text-center">
                             <p>
                                 <span class="badge badge-dark">Season {{ episode.season }}</span> 
@@ -53,7 +53,7 @@
             <div class="row">
                 {% for episode in episodes if episode.season == 3 %}
                 <div class="col-md-4 col-sm-6">
-                    <a href="{{ path('episode_show', {'id' : episode.id}) }}">
+                    <a href="{{ path('episode_show', {'slug' : episode.slug}) }}">
                         <div class="episode mx-1 my-3 text-center">
                             <p>
                                 <span class="badge badge-dark">Season {{ episode.season }}</span> 
@@ -73,7 +73,7 @@
             <div class="row">
                 {% for episode in episodes if episode.season == 4 %}
                 <div class="col-md-4 col-sm-6">
-                    <a href="{{ path('episode_show', {'id' : episode.id}) }}">
+                    <a href="{{ path('episode_show', {'slug' : episode.slug}) }}">
                         <div class="episode mx-1 my-3 text-center">
                             <p>
                                 <span class="badge badge-dark">Season {{ episode.season }}</span> 
