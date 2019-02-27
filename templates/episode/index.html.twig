@@ -3,10 +3,10 @@
 {% block title %}Black Mirror - {{ episode.name }}{% endblock %}
 
 {% block body %}
-<div class="container mt-5 py-5">
+<div class="container mt-5 py-5 episodeDetails">
     <div class="row">
         <div class="col-md-6">
-            <img src="{{ asset(episode.imgPath ~ episode.imgName) }}" alt="{{ episode.name }}" width="100%" />
+            <img src="{{ asset(episode.imgPath ~ episode.imgName) }}" alt="{{ episode.name }}" />
         </div>
         <div class="col-md-6 py-4">
             <h2>{{ episode.name }}</h2>

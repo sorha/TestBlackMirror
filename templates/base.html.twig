@@ -4,8 +4,8 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta charset="UTF-8">
         <meta name="author" content="Alexandre Depraetere">
+        <meta name="description" content="Small website presenting the different episodes of Black Mirror."/>
 
         <title>{% block title %}{% endblock %}</title>
 
@@ -22,17 +22,17 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-md fixed-top navbar-dark">
             <div class="container">
-                <a class="navbar-brand" href="{{ path('home') }}">BLACK MIRROR</a>
+                <a class="navbar-brand" href="{{ path('home') }}#">BLACK MIRROR</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarToggler">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ path('home') }}">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="{{ path('home') }}#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#episodes">Episodes <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="{{ path('home') }}#episodes">Episodes</a>
                         </li>
                     </ul>
                 </div>
@@ -44,34 +44,33 @@
 
         <div class="container">
             <footer class="footer">
-                    <ul class="list-inline text-center">
-                        <li class="list-inline-item">
-                            <a href="https://www.linkedin.com/in/alexandre-depraetere/" target="_blank">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://www.facebook.com/alex.depraetere.5" target="_blank">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://github.com/sorha" target="_blank">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted text-center">Made by Alexandre Depraetere - February 2019</p>
-                </div>
+                <ul class="list-inline text-center">
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/alexandre-depraetere/" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/alex.depraetere.5" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://github.com/sorha" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <p class="copyright text-muted text-center">Made by Alexandre Depraetere - February 2019</p>
             </footer>
         </div>
 

@@ -13,7 +13,7 @@
             <div class="row">
                 {% for episode in episodes if episode.season == 1 %}
                 <div class="col-md-4 col-sm-6">
-                    <a href="{{ path('episode_show', {'slug' : episode.slug}) }}">
+                    <a href="{{ path('episode_show', {'slug' : episode.slug}) }}" alt="Show episode">
                         <div class="episode mx-1 my-3 text-center">
                             <p>
                                 <span class="badge badge-dark">Season {{ episode.season }}</span> 
