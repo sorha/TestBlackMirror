@@ -3,17 +3,17 @@
 {% block title %}Black Mirror - {{ episode.name }}{% endblock %}
 
 {% block body %}
-    <div class="episodeDetails">
-        <p>Name : {{ episode.name }}</p>
-        <p>Season : {{ episode.season }}</p>
-        <p>Number : {{ episode.number }}</p>
-        
-        <h4>Summary :</h4>
-        {{ episode.summary | raw }}
-
-        <p>Runtime : {{ episode.runtime }} min</p>
-        <div>
-            <img src="{{ episode.imgPath }}" alt="{{ episode.name }}" />
+<div class="container mt-5 py-5">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{{ asset(episode.imgPath ~ episode.imgName) }}" alt="{{ episode.name }}" width="100%" />
+        </div>
+        <div class="col-md-6 py-4">
+            <h2>{{ episode.name }}</h2>
+            <p>Season {{ episode.season }} | Episode {{ episode.number}}</p>
+            {{ episode.summary | raw }}
+            <p>Runtime : {{ episode.runtime }} min</p>
         </div>
     </div>
+</div>
 {% endblock %}

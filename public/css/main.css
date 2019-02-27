@@ -1,0 +1,75 @@
+@font-face {
+    font-family: Proxima-Nova-Bold;
+    src: url(../font/Proxima-Nova-Bold.otf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    color:white;
+    font-family: 'Proxima-Nova-Bold', Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background-color: black;
+    border-bottom: 1px solid white;
+}
+
+.masthead {
+    background-image: url("../img/BlackMirrorMain.jpg");
+    background-color:black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    border-bottom: 1px solid white;
+}
+
+.masthead h2 {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+}
+
+#episodes {
+    padding: 50px 0px;
+}
+
+#episodes h4 {
+    padding: 10px;
+}
+
+#episodes a {
+    text-decoration: none;
+    color:white;
+}
+
+.episode {
+    border: 1px solid white;
+    padding: 0;
+}
+
+.episode:hover {
+    transform: scale(1.05);
+}
+
+.episode p {
+    padding: 0;
+    margin:0;
+}
+
+.episode img {
+    width: 100%;
+}
+
+footer a {
+    color: darkgrey;
+}
+
+footer a:hover {
+    color: darkblue;
+    transform: scale(1.3);
+}

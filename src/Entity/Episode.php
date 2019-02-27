@@ -3,9 +3,11 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\EpisodeRepository")
+ * @UniqueEntity("name")
  */
 class Episode
 {
@@ -45,6 +47,11 @@ class Episode
      * @ORM\Column(type="string", length=255)
      */
     private $imgPath;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $imgName;
 
     public function getId(): ?int
     {
@@ -119,6 +126,18 @@ class Episode
     public function setImgPath(string $imgPath): self
     {
         $this->imgPath = $imgPath;
+
+        return $this;
+    }
+
+    public function getImgName(): ?string
+    {
+        return $this->imgName;
+    }
+
+    public function setImgName(string $imgName): self
+    {
+        $this->imgName = $imgName;
 
         return $this;
     }
