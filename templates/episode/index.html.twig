@@ -5,10 +5,10 @@
 {% block body %}
 <div class="container mt-5 py-5 episodeDetails">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-5">
             <img src="{{ asset(episode.imgPath ~ episode.imgName) }}" alt="{{ episode.name }}" />
         </div>
-        <div class="col-md-6 py-4">
+        <div class="col-md-7 py-4">
             <h2>{{ episode.name }}</h2>
             <p>Season {{ episode.season }} | Episode {{ episode.number}}</p>
             {{ episode.summary | raw }}
